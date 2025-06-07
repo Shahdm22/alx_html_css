@@ -4,6 +4,9 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: #fef6e4;
+    color: #333;
+
 }
 
 main {
@@ -15,20 +18,26 @@ main {
 article {
     flex: 2;
     overflow-y: auto;
-    padding: 10px;
-    background-color: #f4f4f4;
+    background-color: #ff4242;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 aside {
     flex: 1;
     overflow-y: auto;
     padding: 10px;
-    background-color: #ddd;
+    background-color: #817e7e;
 }
 
 header,
 footer {
     padding: 15px;
-    background-color: #ccc;
+    background-color: #a70000;
     text-align: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #ff7b00;
 }

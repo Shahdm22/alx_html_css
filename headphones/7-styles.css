@@ -1,0 +1,34 @@
+@import url('6-styles.css');
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animate service cards */
+.services .service {
+    animation: fadeInUp 0.8s ease both;
+    transition: transform 0.3s ease;
+}
+
+.services .service:hover {
+    transform: scale(1.05);
+}
+
+/* Animate pentagon stats */
+.stats .stat {
+    animation: fadeInUp 0.8s ease both;
+    transition: transform 0.3s ease;
+}
+
+.stats .stat:hover {
+    transform: scale(1.1) rotate(2deg);
+}

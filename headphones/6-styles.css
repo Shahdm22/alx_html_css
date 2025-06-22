@@ -1,0 +1,47 @@
+@import url('4-styles.css');
+
+/* Replace .stat with pentagon shape */
+.stat {
+    background-color: #FF6565;
+    color: white;
+    width: 120px;
+    height: 120px;
+    clip-path: polygon(50% 0%,
+            100% 38%,
+            82% 100%,
+            18% 100%,
+            0% 38%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.stat p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.stat span {
+    font-size: 0.8rem;
+}
+
+/* Responsive tweak */
+@media screen and (max-width: 480px) {
+    .stat {
+        width: 90px;
+        height: 90px;
+    }
+
+    .stat p {
+        font-size: 1rem;
+    }
+
+    .stat span {
+        font-size: 0.65rem;
+    }
+}

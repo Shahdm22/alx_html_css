@@ -1,0 +1,30 @@
+@import url('7-styles.css');
+
+/* Hide hamburger by default on desktop */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Show hamburger & hide nav links on mobile */
+@media screen and (max-width: 480px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+        background-color: #071629;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
